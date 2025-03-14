@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-1-1.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập số bị chia:"));
+        let b = parseInt(prompt("Nhập số chia:"));
+
+        if (b === 0) {
+            alert("Không thể chia cho số 0");
+        } else if (a % b === 0) {
+            alert(a+"chia hết cho"+b);
+        } else {
+            alert(a+"không chia hết cho"+b);
+        }
+    </script>
+</body>
+</html>
