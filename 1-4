@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-1-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        let num1 = prompt("Nhập số nguyên thứ nhất:");
+        let num2 = prompt("Nhập số nguyên thứ hai:");
+        let num3 = prompt("Nhập số nguyên thứ ba:");
+        let max = Math.max(num1, num2, num3);
+        alert("Giá trị lớn nhất trong 3 số là:" + max);
+    </script>
+</body>
+</html>
