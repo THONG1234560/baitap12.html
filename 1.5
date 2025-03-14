@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-1-5.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        let testScore = prompt("Nhập điểm bài kiểm tra:");
+        let midtermScore = prompt("Nhập điểm thi giữa kỳ:");
+        let finalScore = prompt("Nhập điểm thi cuối kỳ:");
+        let averageScore = (testScore + midtermScore + finalScore) / 3;
+        if (averageScore >= 9) {
+            alert("Học lực: Xuất Sắc");
+        } else if (averageScore >= 8) {
+            alert("Học lực: Giỏi");
+        } else if (averageScore >= 6.5) {
+            alert("Học lực: Khá");
+        } else if (averageScore >= 5) {
+            alert("Học lực: Trung Bình");
+        } else {
+            alert("Học lực: Yếu");
+        }
+    </script>
+</body>
+</html>
