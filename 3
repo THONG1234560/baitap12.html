@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-2-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        function laSoNguyenTo(so) {
+    if (so < 2) return false;
+    for (let i = 2; i <= Math.sqrt(so); i++) {
+        if (so % i === 0) return false;
+    }
+    return true;
+}
+
+function timNSoNguyenTo(n) {
+    let cacSoNguyenTo = [];
+    let soHienTai = 2;
+
+    while (cacSoNguyenTo.length < n) {
+        if (laSoNguyenTo(soHienTai)) {
+            cacSoNguyenTo.push(soHienTai);
+        }
+        soHienTai++;
+    }
+
+    return cacSoNguyenTo;
+}
+
+let soNguyenToDauTien = timNSoNguyenTo(20);
+document.write("20 số nguyên tố đầu tiên là: " + soNguyenToDauTien.join(", "));
+
+    </script>
+</body>
+</html>
