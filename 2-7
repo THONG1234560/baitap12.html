@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-1-2.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        let a = prompt("Nhập hệ số a:");
+        let b = prompt("Nhập hệ số b:");
+        let c = prompt("Nhập hệ số c:");
+        let delta = b * b - 4 * a * c;
+
+        if (a === 0) {
+            if (b === 0) {
+                document.write(c === 0 ? "Phương trình vô số nghiệm." : "Phương trình vô nghiệm.");
+            } else {
+                let x = -c / b;
+                document.write("Nghiệm của phương trình là: " + x);
+            }
+            } else {
+            if (delta < 0) {
+                document.write("Phương trình vô nghiệm.");
+            } else if (delta === 0) {
+                let x = -b / (2 * a);
+                document.write("Phương trình có nghiệm kép: " + x);
+        } else {
+            let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            document.write("Phương trình có hai nghiệm phân biệt:");
+            document.write("x1 = " + x1);
+            document.write("x2 = " + x2);
+        }
+    }
+
+    </script>
+</body>
+</html>
