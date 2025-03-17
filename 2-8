@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-1-3.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        let age = prompt("Nhập một số nguyên:");
+        if (age > 0 && age < 120) {
+            document.write("Số này là tuổi hợp lệ.");
+        } else {
+            document.write("Số này không phải là tuổi hợp lệ.");
+        }
+    </script>
+</body>
+</html>
