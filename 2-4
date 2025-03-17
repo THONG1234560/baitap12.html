@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-2-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        let a = prompt("Nhập cạnh a của hình chữ nhật:");
+        let b = prompt("Nhập cạnh b của hình chữ nhật:");
+        let s = a * b;
+        document.write("Diện tích hình chữ nhật là: " + s);
+    </script>
+</body>
+</html>
