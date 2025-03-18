@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12-5-4.html</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            white-space: pre;
-        }
-    </style>
+    <title>12-5-4</title>
 </head>
 <body>
     <script>
-        function inHinhChuNhatRong(chieuDai, chieuRong) {
-            for (let i = 1; i <= chieuRong; i++) {
-                if (i === 1 || i === chieuRong) {
-                    document.write("*".repeat(chieuDai) + "<br>");
+        let width = 10; // Chiều rộng hình chữ nhật
+        let height = 5; // Chiều cao hình chữ nhật
+
+        for (let i = 0; i < height; i++) {
+            for (let j = 0; j < width; j++) {
+                if (i === 0 || i === height - 1 || j === 0 || j === width - 1) {
+                    document.write("*");
                 } else {
-                    document.write("*" + " ".repeat(chieuDai - 2) + "*" + "<br>");
+                    document.write("&nbsp;&nbsp;"); 
                 }
             }
+            document.write("<br>");
         }
-        inHinhChuNhatRong(10, 5);
     </script>
 </body>
+</html>
+
 </html>
