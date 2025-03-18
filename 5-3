@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-5-3.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            white-space: pre; 
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        function tamGiacVuongDuoiTrai(h) {
+            for (let i = 1; i <= h; i++) {
+                document.write("*".repeat(i) + "<br>");
+            }
+        }
+
+        function tamGiacVuongTrenTrai(h) {
+            for (let i = h; i > 0; i--) {
+                document.write("*".repeat(i) + "<br>");
+            }
+        }
+
+        function tamGiacVuongDuoiPhai(h) {
+            for (let i = 1; i <= h; i++) {
+                document.write(" ".repeat(h - i) + "*".repeat(i) + "<br>");
+            }
+        }
+
+        function tamGiacVuongTrenPhai(h) {
+            for (let i = h; i > 0; i--) {
+                document.write(" ".repeat(h - i) + "*".repeat(i) + "<br>");
+            }
+        }
+
+        document.write("Tam giác vuông góc dưới-trái:<br>");
+        tamGiacVuongDuoiTrai(5);
+
+        document.write("<br>Tam giác vuông góc trên-trái:<br>");
+        tamGiacVuongTrenTrai(5);
+
+        document.write("<br>Tam giác vuông góc dưới-phải:<br>");
+        tamGiacVuongDuoiPhai(5);
+
+        document.write("<br>Tam giác vuông góc trên-phải:<br>");
+        tamGiacVuongTrenPhai(5);
+    </script>
+</body>
+</html>
