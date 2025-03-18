@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-5-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function inHinhChuNhatRong(chieuDai, chieuRong) {
+            for (let i = 1; i <= chieuRong; i++) {
+                if (i === 1 || i === chieuRong) {
+                    document.write("*".repeat(chieuDai) + "<br>");
+                } else {
+                    document.write("*" + " ".repeat(chieuDai - 2) + "*" + "<br>");
+                }
+            }
+        }
+        inHinhChuNhatRong(10, 5);
+    </script>
+</body>
+</html>
