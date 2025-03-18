@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-4-1.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        for (let i = 1; i <= 100; i++) {
+    if (i === 99) {
+        alert("Hoàn thành!");
+        }
+        document.write(i + "<br>");
+    }
+
+    </script>
+</body>
+</html>
