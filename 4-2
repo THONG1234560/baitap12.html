@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-1-3.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+        let nhietDo = parseFloat(prompt("Nhập nhiệt độ hiện tại:"));
+            if (nhietDo > 100) {
+                document.write("Nhiệt độ quá cao! Hãy giảm nhiệt độ.");
+            } else if (nhietDo < 20) {
+                document.write("Nhiệt độ quá thấp! Hãy tăng nhiệt độ.");
+            } else {
+                document.write("Nhiệt độ ở mức bình thường.");
+            }
+    </script>
+</body>
+</html>
