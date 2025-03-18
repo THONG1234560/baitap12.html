@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-4-8.html</title>
+</head>
+<body>
+    <button onclick="choiGame()">Chơi</button>
+
+    <script>
+        function choiGame() {
+            let khoang = prompt("Nhập khoảng (ví dụ: 1-100):").split("-");
+            let min = parseInt(khoang[0]);
+            let max = parseInt(khoang[1]);
+
+            if (isNaN(min) || isNaN(max) || min >= max) {
+                alert("Khoảng không hợp lệ!");
+                return;
+            }
+
+            let soNgauNhien = Math.floor(Math.random() * (max - min + 1)) + min;
+            let doan;
+
+            while (doan !== soNgauNhien) {
+                doan = parseInt(prompt("Nhập số bạn đoán:"));
+                if (doan === soNgauNhien) {
+                    document.write("Chúc mừng! Bạn đã đoán đúng.<br>");
+                    break;
+                } else if (doan < soNgauNhien) {
+                    document.write("Số bạn đoán nhỏ hơn số bí mật.<br>");
+                } else {
+                    document.write("Số bạn đoán lớn hơn số bí mật.<br>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
