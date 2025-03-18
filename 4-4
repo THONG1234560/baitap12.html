@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-4-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script> 
+       function soFibonacciChiaHetCho5() {
+            let a = 0, b = 1;
+            while (true) {
+                let c = a + b;
+                if (c % 5 === 0) return c;
+                a = b;
+                b = c;
+            }
+        }
+        document.write("Số Fibonacci đầu tiên chia hết cho 5: " + soFibonacciChiaHetCho5());
+    </script>
+</body>
+</html>
